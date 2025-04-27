@@ -1,0 +1,54 @@
+.reply-generator-button {
+  background-color: #1da1f2;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 4px 8px;
+  margin: 4px 0;
+  cursor: pointer;
+  font-size: 12px;
+}
+.reply-generator-button:hover {
+  background-color: #0d8ddb;
+}
+
+.reply-generator-container {
+  margin-top: 8px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  border-radius: 4px;
+}
+.reply-text {
+  white-space: pre-wrap;
+  margin-bottom: 8px;
+}
+.reply-generator-action {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 4px 8px;
+  margin-right: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.reply-generator-action:hover {
+  background-color: #45a049;
+}
+
+.spinner {
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #3498db;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

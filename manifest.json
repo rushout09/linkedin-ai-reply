@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "AI Reply Generator",
+  "version": "1.0",
+  "description": "Generate AI replies on LinkedIn.",
+  "permissions": ["storage", "activeTab", "scripting", "tabs"],
+  "host_permissions": ["https://api.openai.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://linkedin.com/*",
+        "*://*.linkedin.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ]
+}
